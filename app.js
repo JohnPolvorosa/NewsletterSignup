@@ -9,7 +9,7 @@ app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({extended:true}));
 
-app.listen(proces.env.PORT, function() {
+app.listen(process.env.PORT, function() {
     console.log("Server listening to port 3000");
 });
 

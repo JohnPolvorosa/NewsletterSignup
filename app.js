@@ -9,8 +9,8 @@ app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({extended:true}));
 
-app.listen(3000, function() {
-    console.log("Server listening to port 3000.");
+app.listen(proces.env.PORT||3000, function() {
+    console.log("Server listening to port 3000");
 });
 
 // Get route
